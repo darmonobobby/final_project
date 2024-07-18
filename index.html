@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link href="./css/cssmenu.js" rel="stylesheet" type="text/css" media="all" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+<link href="./css/cssmenu.js" rel="stylesheet" type="text/css" media="all" />
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+  <script>
+    $(document).ready(function() {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
+  });
+  </script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+ /* Make the image fully responsive */
+ .carousel-inner img {
+  width: 100%;
+  height: 600px;
+    
+  }
+  /*--content-middle--*/
+.content-middle{
+	padding-bottom:3%;
+}
+.content-middle h2{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	background:url(../images/bg-h2.png) repeat-x center;
+	margin-bottom:40px;
+}
+.content-middle h2 span{
+	background:#424147;
+	color:#ffea00;
+	padding:5px 40px;
+}
+.content-middle p{
+	text-align:center;
+	color:#424146;
+	font-size: 1.4em;
+	padding:1% 0;
+}
+
+  
+  
+</style>
+
+
+</head>
+<body>
+  <nav class="shadow p-3 navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-brand">
+        <img src="https://romantic-bassi-f50129.netlify.app/images/logo.png" />
+      </div>
+      <div class="nav nav-pills navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="flex-sm-fill text-sm-center nav-link m-1 active text-white" href="index.html">Home</a>
+          <a class="flex-sm-fill text-sm-center nav-link m-1" href="portfolio.html">Portfolio</a>
+          <a class="flex-sm-fill text-sm-center nav-link m-1" href="blog.html">Blog</a>
+          <a class="flex-sm-fill text-sm-center nav-link m-1" href="about.html">About Us</a>
+          <a class="flex-sm-fill text-sm-center nav-link m-1" href="contact.html">Contact Us</a>             
+          <a class="flex-sm-fill text-sm-center nav-link m-1" href="todos.html">Todos</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/rent1.jpg" alt="Los Angeles" >
+    </div>
+    <div class="carousel-item">
+      <img src="./images/rent2.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/rent3.jpg" alt="New York" >
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+<div class="container">
+  <h2>Promo Sewa Mobil</h2>
+  <p>Gebyar sewa mobil 2024 <strong>jangan lewatkan</strong> harga diskon paling oke.</p>
+  <p>Berlaku hingga akhir Desember 2024</p>
+  <p><strong>Note:</strong> Berlaku untuk penyewa pertama</p>
+  <div class="card-deck">
+    <div class="card bg-primary">
+      <img src="./images/alphard.jpg" alt="chicago" style="width:100%">
+      <div class="card-body text-center">
+        <p class="card-text">Alphard Gen 1</p>
+        <p class="card-text">Fasilitas Terbaik dikelasnya</p>
+        <p class="card-text">Dsikon 30% /p>
+        <p class="card-text">Paling Hemat</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <img src="./images/innova.jpg" alt="chicago" style="width:100%">
+      <div class="card-body text-center">
+        
+        <p class="card-text">Innova Hybrid</p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <img src="./images/avanza.jpg" alt="chicago" style="width:100%">
+      <div class="card-body text-center">
+        <p class="card-text">Avanza Velos</p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <img src="./images/brio.jpg" alt="chicago" style="width:100%">
+      <div class="card-body text-center">
+        <p class="card-text">Brio Matic RS</p>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<<div class="content-middle">
+  <h2><span>Our work</span></h2>
+  <p>Melayani Rental Mobil Dalam Dan Luar Kota</p>
+<div class="grid-container">
+
+  <div>
+    <li style="position: absolute; left: 56px; top: 0px;">
+    </li>
+    <a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200px" height="283px">
+  </a></div>
+  
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>  
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+  <div><a href="images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+    <img src="https://romantic-bassi-f50129.netlify.app/images/pic1.jpg" width="200" height="283">
+  </a></div>
+</div>
+
+  <h2><span>Our Client</span></h2>
+  <p>Perusahaan Terkenal di Indonesia</p>
+  
+<header>
+  <h2>Cities</h2>
+</header>
+
+
+
+<footer class="text-center text-lg-start  text-light" style="background-color: #45526e">
+  <div class="container p-4 pb-0">
+      <div class="row">
+        <div class="col-md-5 mx-auto col-lg-3">
+          <h6 class="text-uppercase mt-5 font-weight-bold">About Us</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      
+        <div class="col-md-2 mx-auto col-lg-3">
+          <h6 class="text-uppercase mt-5 font-weight-bold">Latest tweets</h6>
+          <div class="list-group">
+            <a class="bi-twitter text-light"></a>
+            <a class="text-light">Lorem ipsum consectetuer adipiscing elit, seddia web design. Lorem ipsum consectetuer adipiscing elit, seddia web design</a>
+           
+            <a class="bi-twitter text-light"></a>
+            <a class="text-light">Lorem ipsum consectetuer adipiscing elit, seddia web design. Lorem ipsum consectetuer adipiscing elit, seddia web design</a>
+
+            <a class="bi-twitter text-light"></a>
+            <a class="text-light">Lorem ipsum consectetuer adipiscing elit, seddia web design. Lorem ipsum consectetuer adipiscing elit, seddia web design</a>
+           
+            <a class="bi-twitter text-light"></a>
+            <a class="text-light">Lorem ipsum consectetuer adipiscing elit, seddia web design. Lorem ipsum consectetuer adipiscing elit, seddia web design</a>
+          </div>
+          
+          
+          <h6 class="text-uppercase mt-5 font-weight-bold">Social Connecting</h6>
+          <p>
+            <a class="vi bi-twitter text-light bg-dark px-1 py-1"></a>
+            <a class="vi bi-facebook text-light bg-dark px-1 py-1"></a>
+            <a class="vi bi-linkedin text-light bg-dark px-1 py-1"></a>
+            <a class="vi bi-instagram text-light bg-dark px-1 py-1"></a>
+            <a class="vi bi-youtube text-light bg-dark px-1 py-1"></a>
+          </p>
+        </div>
+        <div class="col-md-5 mx-auto col-lg-3">
+          <h6 class="text-uppercase mt-5 font-weight-bold"> Contact info</h6>
+          <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh web design</p> 
+          <p>info@gmail.com</p>
+          <p>Phone: +1 800 258 2689</p>
+          <p>+1 800 258 2689</p>
+        </div>
+      </div>
+  </div>
+
+  <nav class="shadow p-3 navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+  </nav>
+</footer>
+</body>
+</html>
